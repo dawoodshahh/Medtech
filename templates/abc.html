@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        .search-bar {
+            position: relative;
+            display: flex;
+            align-items: center;
+            width: 100%;
+            border-radius: 15px;
+            background: rgb(255, 255, 255);
+            padding: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .search-bar input {
+            width: 100%;
+            border: none;
+            outline: none;
+            font-size: 2rem;
+            padding: 10px 40px 10px 20px;
+            border-radius: 15px;
+        }
+        .search-bar .fa-search {
+            position: absolute;
+            right: 15px;
+            font-size: 1.5rem;
+            color: gray;
+        }
+    </style>
+</head>
+<body>
+    <div class="container my-4 mt-4" style="background: rgb(255, 255, 255); color: white; border-radius: 15px; padding: 40px;">
+        <form action="/" method="post">
+            <div class="form-group">
+                <label for="symptoms" style="font-size: 1.5rem; color: black;">Select Symptoms:</label>
+                <div class="search-bar">
+                    <input type="text" class="form-control" id="symptoms" name="symptoms" placeholder="Tell me about your symptoms">
+                    <i class="fas fa-search"></i>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
